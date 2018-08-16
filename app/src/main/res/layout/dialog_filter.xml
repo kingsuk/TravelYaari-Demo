@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter:"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amenities:"
+                android:textSize="20dp"/>
+
+        <CheckBox android:id="@+id/cbAC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A/C"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/cbNonAC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non A/C"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/cbVolvo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volvo"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/cbNonVolvo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non Volvo"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/cbSleeper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sleeper"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/cbSemiSleeper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semi Sleeper"
+            android:onClick="onCheckboxClicked"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFilter"
+            android:text="Apply Filters"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnReset"
+            android:text="Reset"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
